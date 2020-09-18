@@ -4,7 +4,7 @@
             <div class="header-container container">
                 <div class="header-container__logo">
                     <a href="#">
-                        <img src="../assets/logo.svg" alt="">
+<!--                        <img src="../assets/logo.svg" alt="">-->
                     </a>
                 </div>
                 <div class="header-container__burger">
@@ -16,8 +16,10 @@
                 </div>
             </div>
         </div>
-        <div class="container">
-            <slot/>
+        <div class="content">
+            <div class="container">
+                <slot/>
+            </div>
         </div>
     </div>
 </template>
@@ -31,11 +33,17 @@
 <style lang="scss">
     @import "src/styles/color";
     .header {
+        border: 1px solid red;
+        height: 80px;
+        display: flex;
+        align-items: center;justify-content: space-between;
+        width: 100%;
         &-container {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            width: 100%;
             &__logo {
                 a {
                     img {

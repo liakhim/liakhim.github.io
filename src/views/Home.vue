@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="container">
-      <div class="content">
+      <div class="content-block">
         <a href="#">
           <div class="block">
             <div class="block__title">
@@ -40,11 +40,12 @@ export default {
 <style lang="scss">
   .home {
     .container {
-      .content {
+      .content-block {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        height: calc(100vh - 80px);
         a {
           .block {
             margin: 10px;
